@@ -21,6 +21,9 @@ export class Address {
     @Column({ type: 'text', nullable: false, comment: 'Home directory' })
     home_directory: string
 
+    @Column({ type: 'text', nullable: false, comment: 'Mail directory' })
+    mail_directory: string
+
     @Column({ type: 'uuid', nullable: false, comment: 'User ID' })
     user_id: string & { __brand: 'UUID' }
 
